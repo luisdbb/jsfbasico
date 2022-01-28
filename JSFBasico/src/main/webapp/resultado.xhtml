@@ -9,15 +9,10 @@
 <h:head>
 	<title>JSF 2.0 Greeting</title>
 </h:head>
-<h:body>
-	<h3>#{login.nombre}</h3>
+<h:body>	
+<h3>Hola <h:outputText value="#{login.nombre}"></h:outputText></h3>
 	<h:form>
-		<center>
-			<h:graphicImage value="images/sonrisa.jpg" width="156" height="156"
-				alt="no se pudo mostrar imagen sonrisa.jpg" />
-			<h:inputText value="#{login.nombre}"></h:inputText>
-			<h:commandButton value="Registrarse" action="#{login.registrar}" />
-		</center>
+			<h:commandButton action="index" value="Registrarse"></h:commandButton>
 	</h:form>
 </h:body>
 </html>
